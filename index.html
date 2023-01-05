@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <span class="error email-error" aria-live="polite"></span>
+      </p>
+      <p>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" minlength="2" />
+        <span class="error country-error" aria-live="polite"></span>
+      </p>
+      <p>
+        <label for="zipcode">Zip code:</label>
+        <input
+          type="text"
+          id="zipcode"
+          name="zipcode"
+          minlength="5"
+          maxlength="5"
+        />
+        <span class="error zipcode-error" aria-live="polite"></span>
+      </p>
+      <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" />
+        <span class="error password-error" aria-live="polite"></span>
+      </p>
+      <p>
+        <label for="password-confirmation"> Confirm password:</label>
+        <input
+          type="password"
+          id="password-confirmation"
+          name="password-confirmation"
+        />
+        <span
+          class="error password-confirmation-error"
+          aria-live="polite"
+        ></span>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
